@@ -21,12 +21,22 @@ p {
 
 .table {
   margin-bottom: 50px;
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 tr,
-td {
+td,
+th {
   border: 1px solid grey;
+  text-align: center;
+  padding: 5px;
+}
+th {
+  background-color: rgb(235, 237, 252);
+}
+
+tbody:nth-child(2n + 1) {
+  background-color: rgb(251, 253, 249);
 }

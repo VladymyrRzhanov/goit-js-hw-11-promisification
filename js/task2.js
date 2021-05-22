@@ -19,14 +19,14 @@ const toggleUserState = (allUsers, userName) => {
 const creatTable = updatedUsers => {
   const table = document.createElement('table');
     table.classList.add('table');
-    const tableRaw = `<tr>
-      <td>index
-      </td>
-      <td>name
-      </td>
-      <td>active
-      </td>
-      </tr>`;
+    const tableRaw = `<thead><tr>
+      <th>index
+      </th>
+      <th>name
+      </th>
+      <th>active
+      </th>
+      </tr></thead>`;
   table.insertAdjacentHTML('beforeend', tableRaw);
  const tableEl = updatedUsers.map((user, index) => {
       const row = `<tr>
@@ -37,7 +37,7 @@ const creatTable = updatedUsers => {
       <td>${user.active}
       </td>
       </tr>`;
-      table.insertAdjacentHTML('beforeend',row)
+      table.insertAdjacentHTML('afterbegin',row)
  })
   
   document.body.append(table)
