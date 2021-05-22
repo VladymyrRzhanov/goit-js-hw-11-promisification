@@ -1,0 +1,32 @@
+body {
+  padding: 50px 50px;
+}
+
+li {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 25px;
+}
+
+.table {
+  margin-bottom: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+tr,
+td {
+  border: 1px solid grey;
+}
